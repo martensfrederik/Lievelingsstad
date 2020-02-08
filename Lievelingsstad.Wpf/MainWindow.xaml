@@ -1,0 +1,17 @@
+﻿<Window x:Name="wndMainWindow" x:Class="Lievelingsstad.Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lievelingsstad.Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="wndMainWindow_Loaded">
+    <Grid>
+        <ListBox x:Name="lstSteden" HorizontalAlignment="Left" Height="193" Margin="42,60,0,0" VerticalAlignment="Top" Width="288" SelectionChanged="lstSteden_SelectionChanged"/>
+        <Label Content="Steden" HorizontalAlignment="Left" Height="28" Margin="42,18,0,0" VerticalAlignment="Top" Width="93"/>
+        <Label x:Name="lblLievelingsstad" Content="Kies een stad" HorizontalAlignment="Left" Height="38" Margin="42,270,0,0" VerticalAlignment="Top" Width="178"/>
+        <Button x:Name="btnNl" Content="Nederlands" HorizontalAlignment="Left" Height="39" Margin="388,60,0,0" VerticalAlignment="Top" Width="106" Click="btnNl_Click"/>
+        <Button x:Name="btnEngels" Content="Engels" HorizontalAlignment="Left" Height="40" Margin="388,129,0,0" VerticalAlignment="Top" Width="106" Click="btnEngels_Click"/>
+
+    </Grid>
+</Window>
